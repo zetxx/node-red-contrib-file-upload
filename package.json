@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-red/node-red-nodes/tree/master/io/ping"
+    "url": "https://github.com/zetxx/node-red-node-file-upload"
   },
   "license": "GPL 3",
   "keywords": [
