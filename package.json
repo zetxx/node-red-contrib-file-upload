@@ -1,0 +1,29 @@
+{
+  "name": "node-red-node-file-upload",
+  "version": "0.0.1",
+  "description": "A Node-RED node for file upload.",
+  "dependencies": {
+    "poster":"https://api.github.com/repos/zetxx/poster/tarball"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/node-red/node-red-nodes/tree/master/io/ping"
+  },
+  "license": "GPL 3",
+  "keywords": [
+    "node-red",
+    "file upload"
+  ],
+  "node-red": {
+    "nodes": {
+      "file-upload": "16-file-upload.js"
+    }
+  },
+  "author": {
+    "name": "Elin Ahmedov",
+    "email": "zetxx@belogradchik.biz",
+    "url": ""
+  },
+  "_id": "node-red-node-file-upload@0.0.1",
+  "directories": {}
+}
