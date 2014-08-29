@@ -1,6 +1,6 @@
 {
   "name": "node-red-node-file-upload",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Node-RED node for file upload.",
   "dependencies": {
     "poster":"https://api.github.com/repos/zetxx/poster/tarball"
