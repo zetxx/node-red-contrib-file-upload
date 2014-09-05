@@ -28,7 +28,7 @@ module.exports = function(RED) {
     this.topic = n.topic;
     var _this = this;
 
-    this.on('input', function (msg) {
+    this.on('input', function(msg) {
 
       var options = {
         uploadUrl: n.url,
@@ -38,7 +38,7 @@ module.exports = function(RED) {
           'script': '{"file":"%s"}'
         },
         uploadHeaders:{
-          'Cookie':((msg.cookie)?msg.cookie:undefined)
+          'Cookie':((msg.cookie)? msg.cookie : undefined)
         }
       };
 
@@ -52,5 +52,5 @@ module.exports = function(RED) {
       });
     });
   }
-  RED.nodes.registerType('file-upload',FileUploadNode);
+  RED.nodes.registerType('file-upload', FileUploadNode);
 }
