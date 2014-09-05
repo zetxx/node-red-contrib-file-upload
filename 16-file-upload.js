@@ -19,38 +19,38 @@ module.exports = function(RED) {
   var poster = require('poster');
 
   function FileUploadNode(n) {
-    RED.nodes.createNode (this,n);
+    RED.nodes.createNode(this, n);
     this.name = n.name;
     this.url = n.url;
     this.file = n.file;
     this.func = n.func;
-    var functionText = "var results = (function(msg){"+this.func+"\n})(msg);";
+    var functionText = 'var results = (function(msg){' + this.func + '\n})(msg);';
     this.topic = n.topic;
-    var node = this;
+    var _this = this;
 
-      this.on('input', function (msg) {
+    this.on('input', function (msg) {
 
-          var options = {
-            uploadUrl: n.url,
-            method: 'POST',
-            fileId: 'file',
-            fields: {
-              'script': '{"file":"%s"}'
-            },
-            uploadHeaders:{
-              'Cookie':((msg.cookie)?msg.cookie:undefined)
-            }
-          };
+      var options = {
+        uploadUrl: n.url,
+        method: 'POST',
+        fileId: 'file',
+        fields: {
+          'script': '{"file":"%s"}'
+        },
+        uploadHeaders:{
+          'Cookie':((msg.cookie)?msg.cookie:undefined)
+        }
+      };
 
-          poster.post(n.file, options, function(err, data) {
-            if (!err) {
-              msg.payload = data;
-              node.send(msg);
-            } else {
-              node.error(err);
-            }
-          });
+      poster.post(n.file, options, function(err, data) {
+        if (!err) {
+          msg.payload = data;
+          _this.send(msg);
+        } else {
+          _this.error(err);
+        }
       });
+    });
   }
-  RED.nodes.registerType("file-upload",FileUploadNode);
+  RED.nodes.registerType('file-upload',FileUploadNode);
 }
