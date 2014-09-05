@@ -19,7 +19,7 @@ module.exports = function(RED) {
   var poster = require('poster');
 
   function FileUploadNode(n) {
-    RED.nodes.createNode(this,n);
+    RED.nodes.createNode (this,n);
     this.name = n.name;
     this.url = n.url;
     this.file = n.file;
