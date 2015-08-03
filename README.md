@@ -10,8 +10,8 @@ Run the following command in the root directory of your Node-RED install
 
     npm install node-red-node-file-upload
 
-    it uses <a href="https://github.com/zetxx/poster.git"> poster</a> node package
 
+it uses <a href="https://github.com/rfrench/poster"> poster</a> node package
 
 Usage
 -----
