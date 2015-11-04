@@ -38,7 +38,7 @@ module.exports = function(RED) {
           'script': '{"file":"%s"}'
         },
         uploadHeaders:{
-          'Cookie':((msg.cookie)? msg.cookie : undefined)
+          'Cookie':((msg.cookie)? msg.cookie : "")
         }
       };
 
