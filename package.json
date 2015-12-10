@@ -1,5 +1,5 @@
 {
-  "name": "node-red-node-file-upload",
+  "name": "node-red-contrib-file-upload",
   "version": "0.0.5",
   "description": "A Node-RED node for file upload.",
   "dependencies": {
@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zetxx/node-red-node-file-upload"
+    "url": "https://github.com/zetxx/node-red-contrib-file-upload"
   },
   "license": "GPL 3",
   "keywords": [
@@ -24,6 +24,6 @@
     "email": "zetxx@belogradchik.biz",
     "url": ""
   },
-  "_id": "node-red-node-file-upload@0.0.2",
+  "_id": "node-red-contrib-file-upload@0.0.2",
   "directories": {}
 }
